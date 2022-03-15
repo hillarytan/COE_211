@@ -36,36 +36,36 @@ public class Calculator {
 	}
     }
 
-    public String add(int a, int b) {
+    public void add(int a, int b) {
         num1 = a;
 	num2 = b;
 	num = num1+num2;
-	return num1 + "+" + num2 + "=" + num;
+	System.out.println(num1 + "+" + num2 + "=" + num);
     }
 
-    public String subtract(int a, int b) {
+    public void subtract(int a, int b) {
         num1 = a;
 	num2 = b;
 	num = num1-num2;
-	return num1 + "-" + num2 + "=" + num;
+	System.out.println(num1 + "-" + num2 + "=" + num);
 
     }
 
-    public String multiply(int a, int b) {
+    public void multiply(int a, int b) {
         num1 = a;
 	num2 = b;
 	num = num1*num2;
-	return num1 + "x" + num2 + "=" + num;
+	System.out.println(num1 + "x" + num2 + "=" + num);
     }
 
-    public String divide(int a, int b) {
+    public void divide(int a, int b) {
         num1 = a;
 	num2 = b;
-	num = num1/num2;
-	return num1 + "/" + num2 + "=" + num;
+	double num0 = num1/(double)num2;
+	System.out.println(num1 + "/" + num2 + "=" + num0);
     }
 
-	public String toString(){
+	/*public String toString(){
 		return num1 + operator + num2 + "=" + num;
-	}
+	}*/
 }
